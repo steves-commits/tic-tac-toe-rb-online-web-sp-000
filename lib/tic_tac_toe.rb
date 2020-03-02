@@ -89,7 +89,40 @@ def full?(board)
   board.all? {|index| index == "X" || index == "O"}
 end
 
+def draw?(board)
+  if !won?(board) && full?(board)
+    return true 
+  else
+    return FALSE
+  end
+end
 
+def over?(board)
+  if won?(board) || draw?(board)
+    return TRUE
+  else 
+    return FALSE
+  end
+end
+
+
+def winner (board)
+  index = []
+  index = won?(board)
+  if index == FALSE
+    return nil
+  else
+    if board[index[0]] == "X"
+      return "X"
+    else 
+      return "O"
+    end
+  end
+end
+
+
+
+    
 
 
 
