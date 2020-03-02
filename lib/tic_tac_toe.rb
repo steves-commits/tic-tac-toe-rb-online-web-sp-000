@@ -9,4 +9,5 @@ def WIN_COMBINATIONS = [
   [2,4,6] # diagonal2 
   ]
   
-  
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+display_board(board) 
